@@ -10,5 +10,7 @@ router.get('/hello', ctx => {
 
 app.use(router.routes());
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('http://localhost:3000');
+});
 
